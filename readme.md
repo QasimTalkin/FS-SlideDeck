@@ -1,6 +1,6 @@
 # Full Stack Dev Notes and Slides
 
-### [live webpage]()
+### [live webpage](https://qasimtalkin.github.io/FS-SlideDeck/)
 
 
 
