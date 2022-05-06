@@ -1,0 +1,359 @@
+header {
+  background-color: #34262b;
+  background: url(https://picjumbo.imgix.net/HNCK7769.jpg?q=40&w=1650&sharp=30)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.more-space {
+  margin-bottom: 20%;
+}
+
+header h1 {
+  color: #34262b;
+  font-size: 150px;
+}
+
+h1 {
+  font-family: "Amatic SC", sans-serif;
+}
+
+.break1,
+.break2,
+.contact h2,
+.contact h3,
+p,
+header h4 {
+  font-family: "Coming Soon", sans-serif;
+}
+
+.social-media {
+  margin-top: 7%;
+}
+
+.intro {
+  margin-top: 12%;
+}
+
+header h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.red {
+  color: #c1292e;
+  font-weight: bold;
+}
+
+/**Navbar customs**/
+
+nav ul li {
+  font-size: 17px;
+  font-family: "News Cycle";
+}
+
+.about-us a {
+  font-family: "News Cycle", serif;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-family: "News Cycle";
+}
+
+.navbar-default {
+  background-color: #fdfffc;
+  border: 0;
+}
+
+.navbar-default .navbar-brand {
+  margin-left: 5%;
+  color: #34262b;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fdfffc;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-text {
+  color: #210a2a;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #210a2a;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f9f2f6;
+  background-color: transparent;
+  border-bottom: 1px solid #f9f2f6;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f9f2f6;
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #f9f2f6;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #ddd;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.navbar-inner {
+  background: rgba(0, 0, 0, 0);
+}
+/**Navbar customs end**/
+/***Services***/
+
+.slides {
+  background-color: #c1292e;
+}
+
+.tabs {
+  background-color: #f26430;
+  border: 1px solid #210a20;
+}
+
+.slides p {
+  margin-top: 10%;
+}
+
+.slides h1 {
+  font-size: 100px;
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+.thumbnail {
+  margin-bottom: 12%;
+}
+
+.thumbnail:hover {
+  -webkit-box-shadow: 2px 2px 2px 1px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 2px 2px 2px 1px #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 2px 2px 2px 1px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.space {
+  margin-bottom: 10%;
+}
+
+.break1 {
+  background: url(https://images.unsplash.com/photo-1432836431433-925d3cc0a5cd?fit=crop&fm=jpg&h=700&q=80&w=1050)
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.break2 {
+  background: url(https://unsplash.imgix.net/photo-1430760814266-9c81759e5e55?fit=crop&fm=jpg&h=750&q=75&w=1050)
+    center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.break2 h3 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.break1 h3 {
+  color: #fff;
+  font-size: 70px;
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+/**End of Services stylus***/
+/***About us****/
+
+.about-us {
+  background-color: #34262b;
+}
+
+.about-us h1 {
+  color: #c1292e;
+  font-size: 100px;
+  margin-top: 7%;
+}
+
+.about-us-p {
+  font-size: 20px;
+  color: #fdfffc;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+.descript {
+  margin-bottom: 15%;
+}
+
+.team {
+  margin-top: 25%;
+  border: 1px solid #fdfffc;
+  padding: 20px 50px 20px 50px;
+  text-decoration: none;
+  color: #f9f2f6;
+}
+
+.team:hover {
+  text-decoration: none;
+  background: rgba(193, 41, 46, 0.4);
+  color: #f9f2f6;
+}
+/* Contact */
+
+.contact {
+  background-color: #c1292e;
+}
+
+.contact h1 {
+  font-size: 100px;
+  margin-top: 7%;
+}
+
+.social-media-row-1 {
+  margin-top: 10%;
+}
+
+.contact i {
+  font-size: 1000%;
+  padding: 20% 0% 20% 0%;
+}
+
+.contact .icon {
+  border: 1px solid black;
+}
+
+.icon a {
+  color: #fff;
+}
+
+.icon:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+
+footer {
+  background-color: #34292b;
+}
+
+.go-up-icon i {
+  color: white;
+  font-size: 400%;
+  margin-top: 15%;
+  border: 1px solid white;
+  padding: 2% 4% 3% 4%;
+  border-radius: 10%;
+}
+
+.go-up-icon i:hover {
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+footer p {
+  color: white;
+  padding-top: 37%;
+}
+
+@media screen and (max-width: 500px) {
+  header h1,
+  .about-us h1,
+  .slides h1,
+  .contact h1 {
+    font-size: 50px;
+    margin-bottom: 15%;
+  }
+
+  header h4 {
+    font-size: 20px;
+    margin-bottom: 15%;
+  }
+
+  .about-us-p {
+    font-size: 14px;
+  }
+
+  .contact i {
+    font-size: 500%;
+  }
+
+  .intro {
+    margin-top: 50%;
+  }
+}
+
+.caption {
+  text-align: center;
+}
+
+.caption a {
+  border: 1px solid rgba(193, 41, 46, 0.4);
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  color: rgba(193, 41, 46, 0.4);
+  font-family: "Coming Soon", sans-serif;
+  width: 120px;
+  margin: 5px 10px;
+  font-size: large;
+  margin-top: 10px;
+}
+
+.caption a:hover {
+  text-decoration: none;
+  background: rgba(193, 41, 46, 0.4);
+  color: #f9f2f6;
+}
+.caption img {
+  margin-bottom: 20px;
+}
+
+.caption img:hover {
+  transform: 0.3s ease-out;
+  background-color: rgba(0, 0, 0, 0.5);
+}
