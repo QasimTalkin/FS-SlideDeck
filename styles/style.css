@@ -1,5 +1,17 @@
+
+:root{
+  --theme-color-primary: #e76f51ff;
+  --theme-color-secondary:  rgb(214, 173, 163);
+  --theme-color-sub: #264653ff;
+}
+
+* {
+  transition: all 0.5s;
+}
+
+
 header {
-  background-color: #34262b;
+  background-color: var(--theme-color-sub);
   background: url(https://picjumbo.imgix.net/HNCK7769.jpg?q=40&w=1650&sharp=30)
     no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -8,12 +20,38 @@ header {
   background-size: cover;
 }
 
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.button {
+  min-width: 120px;
+  position: relative;
+  display: inline-block;
+  margin: 2px auto;
+  padding: 10px 0;  
+  border-radius: 20px;
+  font-size: 12px;
+  background-color: var(--theme-color);
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  border:1px solid rgb(216, 210, 212);
+}
+
 .more-space {
   margin-bottom: 20%;
 }
 
 header h1 {
-  color: #34262b;
+  color: var(--theme-color-sub);
   font-size: 150px;
 }
 
@@ -39,7 +77,7 @@ header h4 {
 }
 
 header h4 {
-  color: #fff;
+  color: var(--theme-color);
   font-size: 28px;
   font-weight: bold;
 }
@@ -72,7 +110,7 @@ nav ul li {
 
 .navbar-default .navbar-brand {
   margin-left: 5%;
-  color: #34262b;
+  color: var(--theme-color-sub);
 }
 
 .navbar-default .navbar-brand:hover,
@@ -142,7 +180,7 @@ nav ul li {
 /***Services***/
 
 .slides {
-  background-color: #c1292e;
+  background-color:var(--theme-color-primary);
 }
 
 .tabs {
@@ -193,14 +231,14 @@ nav ul li {
 }
 
 .break2 h3 {
-  color: #fff;
+  color: var(--theme-color);
   font-size: 70px;
   margin-top: 15%;
   margin-bottom: 15%;
 }
 
 .break1 h3 {
-  color: #fff;
+  color: var(--theme-color);
   font-size: 70px;
   margin-top: 15%;
   margin-bottom: 15%;
@@ -210,7 +248,7 @@ nav ul li {
 /***About us****/
 
 .about-us {
-  background-color: #34262b;
+  background-color: var(--theme-color-sub);
 }
 
 .about-us h1 {
@@ -270,7 +308,7 @@ nav ul li {
 }
 
 .icon a {
-  color: #fff;
+  color: var(--theme-color-secondary);
 }
 
 .icon:hover {
@@ -280,7 +318,7 @@ nav ul li {
 /* Footer */
 
 footer {
-  background-color: #34292b;
+  background-color: var(--theme-color-sub);
 }
 
 .go-up-icon i {

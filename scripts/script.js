@@ -1,5 +1,52 @@
+let themes = document.querySelectorAll(".button-container .button");
+let root = document.querySelector(":root");
+themes.forEach((theme) => {
+  theme.addEventListener('click', (e) => {
+    root.style.setProperty('--theme-color-primary', e.target.style.background);  
+    root.style.setProperty('--theme-color-sub', e.target.style.color);
+  })
+})
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// nav-bar 
 $(document).ready(function() {
   var scroll_start = 0;
   var startchange = $('#startchange');
@@ -13,9 +60,6 @@ $(document).ready(function() {
         $('.navbar-default').css('background-color', 'transparent');
       }
     });
-  }
+  }  
 }
-
-
-
 );
