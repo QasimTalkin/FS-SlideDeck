@@ -1,12 +1,13 @@
 
 :root{
+
   --theme-color-primary: #e76f51ff;
   --theme-color-secondary:  rgb(214, 173, 163);
   --theme-color-sub: #264653ff;
 }
 
 * {
-  transition: all 0.5s;
+  transition: all 0.1s;
 }
 
 
