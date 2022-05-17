@@ -1,5 +1,7 @@
-let themes = document.querySelectorAll(".button-container .button");
-let root = document.querySelector(":root");
+var themes = document.querySelectorAll(".button-container .button");
+var root = document.querySelector(":root");
+
+
 themes.forEach((theme) => {
   theme.addEventListener('click', (e) => {
     root.style.setProperty('--theme-color-primary', e.target.style.background);  
