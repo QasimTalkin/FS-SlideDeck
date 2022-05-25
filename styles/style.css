@@ -396,3 +396,22 @@ footer p {
   transform: 0.3s ease-out;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+.slide-deck {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 950px) {
+  .slide-deck {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+};
+
+@media screen and (max-width: 650px) {
+  .slide-deck {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+};
