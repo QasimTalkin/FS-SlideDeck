@@ -1,7 +1,9 @@
 var themes = document.querySelectorAll(".button-container .button");
 var root = document.querySelector(":root");
+var slideDeck  = document.querySelector(".slide-deck");
+var slidesArray = ['GIT-Essentials','CSS-Essentials', 'HTML5-Essentials','WireFrame' ,'JS-Essentials' ]
 
-
+// cahange theme
 themes.forEach((theme) => {
   theme.addEventListener('click', (e) => {
     root.style.setProperty('--theme-color-primary', e.target.style.background);  
@@ -9,10 +11,24 @@ themes.forEach((theme) => {
   })
 })
 
-
-
-
-
+// add slide deck
+slidesArray.forEach((slide) => {
+  slideDeck.innerHTML += `<div class="col-xs-12 col-sm-4 col-md-4">
+  <div class="thumbnail">
+    <div class="caption slide">
+      <img src="img/${slide}.png" class="img-responsive" />
+      <a type="button" class="btn"
+        href="https://qasimtalkin.github.io/FS-SlideDeck/embeded/${slide}.html">
+        view
+      </a>
+      <a type="button" class="btn"
+        href="https://qasimtalkin.github.io/FS-SlideDeck/pdf/${slide}.pdf" download>
+        Download
+      </a>
+    </div>
+  </div>
+</div>`
+});
 
 
 
