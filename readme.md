@@ -2,8 +2,6 @@
 
 ### [live webpage](https://qasimtalkin.github.io/FS-SlideDeck/)
 
-
-
 ## Index 
 
 ### GIT 
@@ -12,3 +10,6 @@
 
 ### CSS
 
+### JS
+
+### JS2-DOM
