@@ -4,6 +4,9 @@
   --theme-color-primary: #e76f51ff;
   --theme-color-secondary:  rgb(214, 173, 163);
   --theme-color-sub: #264653ff;
+  --lightBg: rgb(216, 210, 212);
+  --lightBg: rgb(191, 184, 187);
+
 }
 
 * {
@@ -39,12 +42,12 @@ header {
   padding: 10px 0;  
   border-radius: 20px;
   font-size: 12px;
-  background-color: var(--theme-color);
+  background-color:  var(--lightBg);
   font-size: 18px;
   font-weight: 900;
   text-align: center;
   cursor: pointer;
-  border:1px solid rgb(216, 210, 212);
+  border:1px solid var(--lightBg);
 }
 
 .more-space {
@@ -105,7 +108,7 @@ nav ul li {
 }
 
 .navbar-default {
-  background-color: #fdfffc;
+  background-color:var(--lightBg);
   border: 0;
 }
 
@@ -116,7 +119,7 @@ nav ul li {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #fdfffc;
+  color: var(--lightBg);
   background-color: transparent;
 }
 
@@ -130,22 +133,22 @@ nav ul li {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #f9f2f6;
+  color: var(--lightBg);
   background-color: transparent;
-  border-bottom: 1px solid #f9f2f6;
+  border-bottom: 1px solid var(--lightBg);
 }
 
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #f9f2f6;
-  background-color: #e7e7e7;
+  color:var(--lightBg);
+  background-color: var(--lightBg);
 }
 
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
-  color: #f9f2f6;
+  color: var(--lightBg);
   background-color: transparent;
 }
 
