@@ -1,7 +1,7 @@
 # Fs-Slides 
-Full Stack Development lecture SLides 
+Full Stack Development lecture Slides 
 
-# [Go To page Live Page](https://qasimtalkin.github.io/FS-SlideDeck/)
+# [Go To Live Page](https://qasimtalkin.github.io/FS-SlideDeck/)
 Or Directly access slides here
 * [Git/GitHub](https://qasimtalkin.github.io/FS-SlideDeck/embeded/GIT-Essentials.html)
 * [HTML](https://qasimtalkin.github.io/FS-SlideDeck/embeded/HTML5-Essentials.html)
