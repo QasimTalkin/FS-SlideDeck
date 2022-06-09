@@ -1,7 +1,7 @@
 var themes = document.querySelectorAll(".button-container .button");
 var root = document.querySelector(":root");
 var slideDeck  = document.querySelector(".slide-deck");
-var slidesArray = ['GIT-Essentials','HTML5-Essentials', 'CSS-Essentials', 'WireFrames' ,'JS-Essentials' ,'JS-Essentials2', 'jQuery-Essentials', 'BootStrap-Essentials']
+var slidesArray = ['GIT-Essentials','HTML5-Essentials', 'CSS-Essentials', 'WireFrames' ,'JS-Essentials' ,'JS-Essentials2', 'jQuery-Essentials', 'BootStrap-Essentials', 'Js-Essentials3']
 
 // cahange theme
 themes.forEach((theme) => {
