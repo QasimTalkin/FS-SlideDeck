@@ -15,7 +15,10 @@ var slidesArray = [
   'PHP-Essentials1',
   'TDD',
   'Node-Essentials',
-  'Express']
+  'Express',
+  'SQL-Essentials',
+  'ORM-Essentials',
+  ]
 
 // cahange theme
 themes.forEach((theme) => {

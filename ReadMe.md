@@ -15,5 +15,6 @@ Or Directly access slides here
 * [PHP-Essentials1](https://qasimtalkin.github.io/FS-SlideDeck/embeded/PHP-Essentials1.html)
 * [TDD](https://qasimtalkin.github.io/FS-SlideDeck/embeded/TDD.html)
 * [Node](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Node-Essentials.html)
-* [Express](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Express.html)
-
+* [Express-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Express.html)
+* [SQL-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/SQL-Essentials.html)
+* [ORM-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/ORM-Essentials.html)
