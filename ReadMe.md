@@ -18,3 +18,4 @@ Or Directly access slides here
 * [Express-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Express.html)
 * [SQL-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/SQL-Essentials.html)
 * [ORM-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/ORM-Essentials.html)
+* [Docker-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Docker-Essentials.html)
