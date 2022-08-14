@@ -18,6 +18,7 @@ var slidesArray = [
   'Express',
   'SQL-Essentials',
   'ORM-Essentials',
+  'Docker-Essentials',
   ]
 
 // cahange theme
