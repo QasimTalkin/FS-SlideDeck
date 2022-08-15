@@ -19,6 +19,7 @@ var slidesArray = [
   'SQL-Essentials',
   'ORM-Essentials',
   'Docker-Essentials',
+  'MVC-Essentials',
   ]
 
 // cahange theme
@@ -47,7 +48,6 @@ slidesArray.forEach((slide) => {
       </div>
     </div>
   </div>
-  
   `
 });
 
