@@ -19,4 +19,4 @@ Or Directly access slides here
 * [SQL-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/SQL-Essentials.html)
 * [ORM-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/ORM-Essentials.html)
 * [Docker-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/Docker-Essentials.html)
-* [MVC-Essentials.png](https://qasimtalkin.github.io/FS-SlideDeck/embeded/MVC-Essentials.html)
+* [MVC-Essentials](https://qasimtalkin.github.io/FS-SlideDeck/embeded/MVC-Essentials.html)
