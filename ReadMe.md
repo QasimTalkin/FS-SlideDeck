@@ -77,6 +77,7 @@ Docker is a set of platform as a service (PaaS) products that use OS-level virtu
 
 MVC stands for Model-View-Controller. It is a software design pattern for implementing user interfaces on computers. It divides a given software application into three interconnected parts so as to separate internal representations of information from the ways information is presented to and accepted from the user. You will learn how to use MVC architecture to create a web application.
 
+Additionally you will also learn about handlebars and session management.
 
 ### [strAPI](https://qasimtalkin.github.io/FS-SlideDeck/embeded/strAPI-essential.html)
 
