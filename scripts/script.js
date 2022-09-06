@@ -20,7 +20,7 @@ var slidesArray = [
   'ORM-Essentials',
   'Docker-Essentials',
   'MVC-Essentials',
-  'strAPI-Essential',
+  'strAPI-essential',
   ]
 
 // cahange theme
