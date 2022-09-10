@@ -21,6 +21,7 @@ var slidesArray = [
   'Docker-Essentials',
   'MVC-Essentials',
   'strAPI-essential',
+  'JS-Solids2'
   ]
 
 // cahange theme

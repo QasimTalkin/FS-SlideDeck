@@ -83,3 +83,10 @@ Additionally you will also learn about handlebars and session management.
 
 Strapi is an open-source headless CMS. It is a Node.js based CMS that allows you to create and manage your content. You will learn how to use Strapi to create a CMS and how to use it to create a REST API.
 
+### JS-Solids2
+Solidifying concepts with JavaScript
+* `Call Stack`
+* `CallBack Queue`
+* `Closure`
+* `Event Loop`
+* `Factory functions`
