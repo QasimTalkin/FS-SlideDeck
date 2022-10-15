@@ -21,6 +21,7 @@ var slidesArray = [
   'Docker-Essentials',
   'MVC-Essentials',
   'strAPI-essential',
+  'JS-Solids1',
   'JS-Solids2'
   ]
 
