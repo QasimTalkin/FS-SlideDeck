@@ -1,6 +1,6 @@
 var themes = document.querySelectorAll(".button-container .button");
 var root = document.querySelector(":root");
-var slideDeck  = document.querySelector(".slide-deck");
+var slideDeck = document.querySelector(".slide-deck");
 var slidesArray = [
   'GIT-Essentials',
   'HTML5-Essentials',
@@ -23,12 +23,12 @@ var slidesArray = [
   'strAPI-essential',
   'JS-Solids1',
   'JS-Solids2'
-  ]
+]
 
 // cahange theme
 themes.forEach((theme) => {
   theme.addEventListener('click', (e) => {
-    root.style.setProperty('--theme-color-primary', e.target.style.background);  
+    root.style.setProperty('--theme-color-primary', e.target.style.background);
     root.style.setProperty('--theme-color-sub', e.target.style.color);
   })
 })
@@ -89,12 +89,12 @@ slidesArray.forEach((slide) => {
 
 
 // nav-bar 
-$(document).ready(function() {
+$(document).ready(function () {
   var scroll_start = 0;
   var startchange = $('#startchange');
   var offset = startchange.offset();
   if (startchange.length) {
-    $(document).scroll(function() {
+    $(document).scroll(function () {
       scroll_start = $(this).scrollTop();
       if (scroll_start > offset.top) {
         $(".navbar-default").css('background-color', '#c1292e');
@@ -102,6 +102,6 @@ $(document).ready(function() {
         $('.navbar-default').css('background-color', 'transparent');
       }
     });
-  }  
+  }
 }
 );

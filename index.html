@@ -12,7 +12,7 @@
   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="./styles/style.css">
-
+  <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
 </head>
 
 <body>
@@ -103,6 +103,15 @@
       </div>
       </div>
     </div>
+    <h2>
+      Sample JS Code Editor
+   </h2>
+    <div class="klipse">
+       function foo(name) {
+       return "Hello " + name;
+       }
+       foo("Qasim");
+    </div>
     <!----GET IN Touch---->
 
 
@@ -174,6 +183,19 @@
       <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
       <script src="./scripts/script.js"></script>
 
+      <p>
+        Read more about the klipse plugin:
+        <a href="http://blog.klipse.tech/javascript/2016/06/20/blog-javascript.html">
+        A new way of blogging about javascript
+        </a>
+        </p>
+        <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+        <script>
+            window.klipse_settings = {
+                selector_eval_js: '.klipse', // css selector for the html elements you want to klipsify
+            };
+        </script>
+        <script src="https://storage.googleapis.com/app.klipse.tech/plugin_prod/js/klipse_plugin.min.js"></script>
   </body>
 
 </html>
