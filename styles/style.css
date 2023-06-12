@@ -419,3 +419,18 @@ footer p {
     grid-template-columns: 1fr 1fr;
   }
 };
+
+@media (max-width: 767px) {
+  .thumbnail {
+    width: 100%;
+  }
+
+  .caption.slide {
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 10px auto;
+  }
+}
