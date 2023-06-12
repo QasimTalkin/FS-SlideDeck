@@ -36,7 +36,7 @@ themes.forEach((theme) => {
 // add slide deck
 slidesArray.forEach((slide) => {
   slideDeck.innerHTML += `
-  <div class="col-xs-12">
+  <div class="col-md-6">
     <div class="thumbnail">
       <div class="caption slide">
         <img src="img/${slide}.png" class="img-responsive" />
@@ -51,41 +51,8 @@ slidesArray.forEach((slide) => {
       </div>
     </div>
   </div>
-  `
+  `;
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // nav-bar 
