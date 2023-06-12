@@ -434,3 +434,13 @@ footer p {
     margin: 10px auto;
   }
 }
+
+.thumbnail {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .slide-deck .thumbnail {
+    margin-bottom: 40px;
+  }
+}
