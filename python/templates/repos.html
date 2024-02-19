@@ -1,0 +1,31 @@
+<!-- sample tailwinds css cdn page to show li of cards showing names -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-4xl text-center">Repositories {% if username %} for {{ username }} {% endif %}</h1>
+    <div class="flex justify-center">
+        <div class="w-1/2">
+            <ul>
+
+            {% if repos %}
+                {% for repo in repos %}
+                <li class="bg-gray-200 p-4 m-4 rounded-lg text-center text-blue-500 hover:underline hover:bg-pink-300"> <a href= {{ repo.html_url }}>{{ repo.name }}</a></li>
+                {% endfor %}
+            {% else %}
+                <li class="bg-gray-200 p-4 m-4 rounded-lg">No</li>
+                <li class="bg-gray-200 p-4 m-4 rounded-lg">Git</li>
+                <li class="bg-gray-200 p-4 m-4 rounded-lg">User</li>
+                <li class="bg-gray-200 p-4 m-4 rounded-lg">Name</li>
+                <li class="bg-gray-200 p-4 m-4 rounded-lg">:(</li>
+            {% endif %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

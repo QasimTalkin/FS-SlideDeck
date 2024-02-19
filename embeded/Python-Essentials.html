@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>readme.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<!-- headingDivider: 2 -->
+<!--
+theme: gaia
+class: lead
+-->
+<h1 id="python---essentials">Python - Essentials</h1>
+<h2 id="python">Python</h2>
+<ul>
+<li>Python is a high-level, interpreted, interactive and object-oriented scripting language.</li>
+</ul>
+<h2 id="variables">Variables</h2>
+<ul>
+<li>Variables are containers for storing data values.</li>
+<li>Unlike other programming languages, Python has no command for declaring a variable.</li>
+</ul>
+<pre class="hljs"><code><div>x = <span class="hljs-number">5</span>
+y = <span class="hljs-string">"John"</span>
+print(x)
+</div></code></pre>
+<h2 id="data-types">Data Types</h2>
+<ul>
+<li>Some of data types in Python
+<ul>
+<li>Numbers `int, float, complex</li>
+<li>String <code>str</code></li>
+<li>List <code>list</code></li>
+<li>Tuple <code>tuple</code></li>
+<li>Set <code>set</code></li>
+<li>Dictionary <code>dict</code></li>
+<li>Boolean <code>bool</code></li>
+<li>None <code>NoneType</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="numbers">Numbers</h2>
+<p>Numbers in python are are represented by <code>int</code>, <code>float</code>, <code>complex</code></p>
+<ul>
+<li><code>int</code> : integer <code>1, 2, 3, 4, 5</code></li>
+<li><code>float</code> : floating point number <code>1.0, 2.0, 3.0, 4.0, 5.0</code></li>
+<li><code>complex</code> : complex number <code>1+2j, 2+3j, 3+4j, 4+5j, 5+6j</code></li>
+<li><code>type(5)</code> -&gt; <code>int</code></li>
+<li><code>type(5.0)</code> -&gt; <code>float</code></li>
+<li><code>type(5+6j)</code> -&gt; <code>complex</code></li>
+</ul>
+<h2 id="strings">Strings</h2>
+<p>Strings are arrays of bytes representing unicode characters, <code>str</code></p>
+<ul>
+<li><code>str</code> : string <code>&quot;hello&quot;, &quot;world&quot;, &quot;python&quot;, &quot;programming&quot;</code></li>
+<li><code>type(&quot;hello&quot;)</code> -&gt; <code>str</code></li>
+<li><code>type('hello')</code> -&gt; <code>str</code></li>
+<li><code>type(&quot;&quot;&quot;hello&quot;&quot;&quot;)</code> -&gt; <code>str</code></li>
+</ul>
+<h2 id="lists">Lists</h2>
+<p>Lists are used to store multiple items in a single variable, <code>list</code></p>
+<ul>
+<li><code>list</code> : list <code>[1, 2, 3, 4, 5]</code></li>
+<li><code>type([1, 2, 3, 4, 5])</code> -&gt; <code>list</code></li>
+<li><code>type([1, 2.0, 3+4j, &quot;hello&quot;, [1, 2, 3]])</code> -&gt; <code>list</code></li>
+<li><code>type([])</code> -&gt; <code>list</code></li>
+</ul>
+<h2 id="some-common-list-methods">some common list methods</h2>
+<p>list -&gt; <code>[2,'qasim', 3, 4, 5]</code></p>
+<ul>
+<li><code>len([2,'qasim', 3, 4, 5])</code> -&gt; <code>5</code></li>
+<li><code>list.append(6)</code> -&gt; <code>[2,'qasim', 3, 4, 5, 6]</code></li>
+<li><code>list.remove('qasim')</code> -&gt; <code>[2, 3, 4, 5, 6]</code></li>
+<li><code>list.pop()</code> -&gt; <code>[2, 3, 4, 5]</code></li>
+<li><code>list.insert(1, 'qasim')</code> -&gt; <code>[2, 'qasim', 3, 4, 5]</code></li>
+<li><code>list.sort()</code> -&gt; <code>[2, 3, 4, 5, 'qasim']</code></li>
+<li><code>list.reverse()</code> -&gt; <code>['qasim', 5, 4, 3, 2]</code></li>
+<li><code>list.clear()</code> -&gt; <code>[]</code></li>
+<li><code>list.copy()</code> -&gt; <code>[2, 'qasim', 3, 4, 5]</code></li>
+<li><code>list.count(2)</code> -&gt; <code>1</code></li>
+</ul>
+<h2 id="tuples">Tuples</h2>
+<p>Tuples are used to store multiple items in a single variable, they are different from lists in the sense that they are immutable i.e they cannot be changed, <code>tuple</code></p>
+<ul>
+<li><code>tuple</code> : tuple <code>(1, 2, 3, 4, 5)</code></li>
+<li><code>type((1, 2, 3, 4, 5))</code> -&gt; <code>tuple</code></li>
+<li><code>type((1, 2.0, 3+4j, &quot;hello&quot;, [1, 2, 3]))</code> -&gt; <code>tuple</code></li>
+</ul>
+<h2 id="some-common-tuple-methods">Some common tuple methods</h2>
+<p>tuple -&gt; <code>(2,'qasim', 3, 4, 5)</code></p>
+<ul>
+<li><code>len((2,'qasim', 3, 4, 5))</code> -&gt; <code>5</code></li>
+<li><code>tuple.count(2)</code> -&gt; <code>1</code></li>
+<li><code>tuple.index(2)</code> -&gt; <code>0</code></li>
+<li><code>tuple[0]</code> -&gt; <code>2</code></li>
+<li><code>tuple[1]</code> -&gt; <code>qasim</code>&gt;</li>
+<li><code>tuple[2]</code> -&gt; <code>3</code></li>
+</ul>
+<h2 id="sets">Sets</h2>
+<p>Sets are used to store multiple items in a single variable, they are unordered and unindexed, <code>set</code>, repeated items are not allowed</p>
+<ul>
+<li><code>set</code> : set <code>{1, 2, 3, 4, 5}</code></li>
+<li><code>type({1, 2, 3, 4, 5})</code> -&gt; <code>set</code></li>
+<li><code>type({1, 2.0, 3+4j, &quot;hello&quot;, [1, 2, 3]})</code> -&gt; <code>set</code></li>
+</ul>
+<h2 id="some-common-set-methods">Some common set methods</h2>
+<p>set -&gt; <code>{2,'qasim', 3, 4, 5}</code></p>
+<ul>
+<li><code>len({2,'qasim', 3, 4, 5})</code> -&gt; <code>5</code></li>
+<li><code>set.add(6)</code> -&gt; <code>{2,'qasim', 3, 4, 5, 6}</code></li>
+<li><code>set.remove('qasim')</code> -&gt; <code>{2, 3, 4, 5, 6}</code></li>
+<li><code>set.pop()</code> -&gt; <code>{2, 3, 4, 5}</code></li>
+<li><code>set.clear()</code> -&gt; <code>set()</code></li>
+<li><code>set.copy()</code> -&gt; <code>{2, 'qasim', 3, 4, 5}</code></li>
+<li><code>set.discard(2)</code> -&gt; <code>{'qasim', 3, 4, 5}</code></li>
+</ul>
+<h2 id="dictionaries">Dictionaries</h2>
+<p>Dictionaries are used to store data values in key:value pairs, <code>dict</code></p>
+<ul>
+<li><code>dict</code> : dict <code>{&quot;name&quot;: &quot;qasim&quot;, &quot;age&quot;: 25, &quot;city&quot;: &quot;Ottawa&quot;}</code></li>
+<li><code>type({&quot;name&quot;: &quot;qasim&quot;, &quot;age&quot;: 25, &quot;city&quot;: &quot;Ottawa&quot;})</code> -&gt; <code>dict</code></li>
+<li><code>type({&quot;name&quot;: &quot;qasim&quot;, &quot;age&quot;: 25, &quot;city&quot;: &quot;Ottawa&quot;, &quot;hobbies&quot;: [&quot;coding&quot;, &quot;reading&quot;, &quot;gaming&quot;]})</code> -&gt; <code>dict</code></li>
+</ul>
+<h2 id="some-common-dictionary-methods">Some common dictionary methods</h2>
+<p>dict -&gt; <code>{&quot;name&quot;: &quot;qasim&quot;, &quot;age&quot;: 25, &quot;city&quot;: &quot;Ottawa&quot;}</code></p>
+<ul>
+<li><code>len({&quot;name&quot;: &quot;qasim&quot;, &quot;age&quot;: 25, &quot;city&quot;: &quot;Ottawa&quot;})</code> -&gt; <code>3</code></li>
+<li><code>dict[&quot;name&quot;]</code> -&gt; <code>qasim</code></li>
+<li><code>dict.get(&quot;name&quot;)</code> -&gt; <code>qasim</code></li>
+<li><code>dict.keys()</code> -&gt; <code>dict_keys(['name', 'age', 'city'])</code></li>
+<li><code>dict.values()</code> -&gt; <code>dict_values(['qasim', 25, 'Ottawa'])</code></li>
+<li><code>dict.items()</code> -&gt; <code>dict_items([('name', 'qasim'), ('age', 25), ('city', 'Ottawa')])</code></li>
+<li><code>dict.pop(&quot;name&quot;)</code> -&gt; <code>qasim</code></li>
+</ul>
+<h2 id="booleans">Booleans</h2>
+<p>Booleans represent one of two values: <code>True</code> or <code>False</code></p>
+<ul>
+<li><code>bool</code> : bool <code>True, False</code></li>
+<li><code>type(True)</code> -&gt; <code>bool</code></li>
+<li><code>type(False)</code> -&gt; <code>bool</code></li>
+</ul>
+<h2 id="some-common-boolean-methods">Some common boolean methods</h2>
+<ul>
+<li><code>bool(0)</code> -&gt; <code>False</code></li>
+<li><code>bool(1)</code> -&gt; <code>True</code></li>
+<li><code>bool(2)</code> -&gt; <code>True</code></li>
+<li><code>bool(3)</code> -&gt; <code>True</code></li>
+</ul>
+<h2 id="comparison-operators">Comparison Operators</h2>
+<ul>
+<li><code>==</code> : equal</li>
+<li><code>!=</code> : not equal</li>
+<li><code>&gt;</code> : greater than</li>
+<li><code>&lt;</code> : less than</li>
+<li><code>&gt;=</code> : greater than or equal to</li>
+<li><code>&lt;=</code> : less than or equal to</li>
+</ul>
+<h2 id="logical-operators">Logical Operators</h2>
+<ul>
+<li><code>and</code> : and</li>
+<li><code>or</code> : or</li>
+<li><code>not</code> : not</li>
+<li><code>&amp;</code> : and</li>
+<li><code>|</code> : or</li>
+<li><code>~</code> : not</li>
+</ul>
+<h2 id="if-elif-else-statements">if, elif, else Statements</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">if</span> condition:
+    <span class="hljs-comment"># code</span>
+<span class="hljs-keyword">elif</span> condition:
+    <span class="hljs-comment"># code</span>
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-comment"># code</span>
+</div></code></pre>
+<h2 id="for-loops">for Loops</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">5</span>):
+    print(i)
+
+<span class="hljs-keyword">for</span> val <span class="hljs-keyword">in</span> <span class="hljs-string">"string"</span>:
+    <span class="hljs-keyword">if</span> val == <span class="hljs-string">"i"</span>:
+        <span class="hljs-keyword">break</span>
+    print(val)
+
+</div></code></pre>
+<h2 id="while-loops">while Loops</h2>
+<pre class="hljs"><code><div>i = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> i &lt; <span class="hljs-number">6</span>:
+    print(i)
+    i += <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> <span class="hljs-literal">True</span>:
+    print(<span class="hljs-string">"hello"</span>)
+    <span class="hljs-keyword">break</span>
+</div></code></pre>
+<h2 id="list-comprehension">list comprehension</h2>
+<p>list comprehension is a way to create lists in python</p>
+<pre class="hljs"><code><div>new_list = [i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> old_list]
+new_list = [i.upper() <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> old_list]
+new_list = [i <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> old_list <span class="hljs-keyword">if</span> i != <span class="hljs-number">0</span>]
+</div></code></pre>
+<h2 id="functions">functions</h2>
+<p>functions are a block of code that only runs when it is called
+there are many ways to define a function</p>
+<pre class="hljs"><code><div><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">(name)</span>:</span>
+    print(<span class="hljs-string">f"hello <span class="hljs-subst">{name}</span>"</span>)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">(name=<span class="hljs-string">"qasim"</span>)</span>:</span>
+    print(<span class="hljs-string">f"hello <span class="hljs-subst">{name}</span>"</span>)
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">(*args)</span>:</span>
+    <span class="hljs-keyword">while</span> args:
+        print(args.pop())
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">(**kwargs)</span>:</span>
+    <span class="hljs-keyword">for</span> key, value <span class="hljs-keyword">in</span> kwargs.items():
+        print(<span class="hljs-string">f"<span class="hljs-subst">{key}</span> : <span class="hljs-subst">{value}</span>"</span>)
+</div></code></pre>
+<h2 id="lambda-expressions">lambda expressions</h2>
+<p>lambda expressions are used to create anonymous functions and are used to create small functions</p>
+<pre class="hljs"><code><div>x = <span class="hljs-keyword">lambda</span> a : a + <span class="hljs-number">10</span>
+print(x(<span class="hljs-number">5</span>))
+
+my_function = <span class="hljs-keyword">lambda</span> a : a + <span class="hljs-number">10</span>
+print(my_function(<span class="hljs-number">5</span>))
+print((<span class="hljs-keyword">lambda</span> a : a + <span class="hljs-number">10</span>)(<span class="hljs-number">5</span>))
+</div></code></pre>
+<h2 id="map-and-filter">map and filter</h2>
+<p>map and filter are used to apply a function to a list of elements
+map will return a list of the results after applying the given function to each item of a given iterable
+filter will return a list of the elements of the iterable for which the function returns True</p>
+<pre class="hljs"><code><div>my_list = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>]
+new_list = list(map(<span class="hljs-keyword">lambda</span> x: x * <span class="hljs-number">2</span>, my_list))
+new_list = list(filter(<span class="hljs-keyword">lambda</span> x: x % <span class="hljs-number">2</span> == <span class="hljs-number">0</span>, my_list))
+</div></code></pre>
+<h2 id="methods">methods</h2>
+<ul>
+<li><code>dir()</code> : returns a list of all the methods and properties of the object</li>
+<li><code>help()</code> : returns the documentation of the object</li>
+<li><code>type()</code> : returns the type of the object</li>
+<li><code>id()</code> : returns the unique id of the object</li>
+</ul>
+<h2 id="nested-statements-and-scope">nested statements and scope</h2>
+<ul>
+<li>LEGB Rule
+<ul>
+<li>L : Local</li>
+<li>E : Enclosing</li>
+<li>G : Global</li>
+<li>B : Built-in
+the scope of a variable is the context in which it is defined.</li>
+</ul>
+</li>
+</ul>
+<pre class="hljs"><code><div>x = <span class="hljs-number">300</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">()</span>:</span>
+    x = <span class="hljs-number">200</span>
+    print(x)
+print(x) <span class="hljs-comment"># 300</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">my_function</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-keyword">global</span> x
+    x = <span class="hljs-number">200</span>
+    print(x) <span class="hljs-comment"># 200</span>
+</div></code></pre>
+<h2 id="file-io">file I/O</h2>
+<p>to use files in python, you have to open them first, using the built-in open() function</p>
+<pre class="hljs"><code><div>f = open(<span class="hljs-string">"demofile.txt"</span>, <span class="hljs-string">"r"</span>)
+print(f.read())
+f.close()
+</div></code></pre>
+<h2 id="repl">REPL</h2>
+<ul>
+<li>Read : read the user input</li>
+<li>Evaluate : evaluate the user input</li>
+<li>Print : print the result</li>
+<li>Loop : loop the above process until the user quits</li>
+</ul>
+<h2 id="helpful-funvtions">helpful funvtions</h2>
+<ul>
+<li>type()</li>
+<li>dir()</li>
+<li>help()</li>
+</ul>
+<h2 id="string-functions">String functions</h2>
+<ul>
+<li>len()</li>
+<li>lower()</li>
+<li>strip()</li>
+<li>split()</li>
+</ul>
+<h2 id="list-functions">List functions</h2>
+<ul>
+<li>append()</li>
+<li>remove()</li>
+<li>set()</li>
+<li>sort()</li>
+<li>join() <code>&quot; * &quot;.join(list)</code> -&gt; <code>a * b * c</code> where list = [a, b, c]</li>
+</ul>
+<h2 id="list-single-line-for-loop">list single line for loop</h2>
+<ul>
+<li><code>new_list = [i.upper() for i in old_list]</code></li>
+<li><code>set_list = {i.upper() for i in old_list}</code></li>
+<li><code>dict_list = {i: i.upper() for i in old_list}</code></li>
+</ul>
+<h2 id="creating-copy-of-list">creating copy of list</h2>
+<ul>
+<li><code>new_list = old_list</code> # here the changes in new_list will reflect in old_list</li>
+<li><code>new_list = old_list[:]</code> # here the changes in new_list will not reflect in old_list</li>
+<li><code>new_list = old_list.copy()</code> # here the changes in new_list will not reflect in old_list</li>
+<li><code>new_list = list(old_list)</code> # here the changes in new_list will not reflect in old_list</li>
+</ul>
+<h2 id="zip-function">zip function</h2>
+<ul>
+<li><code>zip([1, 2, 3], [4, 5, 6])</code> -&gt; <code>[(1, 4), (2, 5), (3, 6)]</code></li>
+<li>zip combine the elements of two lists in a tuple</li>
+</ul>
+<h2 id="packages">Packages</h2>
+<h2 id="standard-library">Standard Library</h2>
+<ul>
+<li><code>import random</code></li>
+<li><code>import math</code></li>
+<li><code>import os</code></li>
+<li><code>import sys</code></li>
+<li><code>import json</code>
+full list of standard library: https://docs.python.org/3/library/</li>
+</ul>
+<h2 id="creating-and-using-module">Creating and Using module</h2>
+<ul>
+<li>cerate folder <code>mkdir my_module</code></li>
+<li>create file <code>touch my_module/my_module.py</code></li>
+<li>create file <code>touch my_module/__init__.py</code></li>
+<li><code>from my_module import my_module</code></li>
+<li><code>my_module.my_function()</code></li>
+</ul>
+<h2 id="os">os</h2>
+<ul>
+<li><code>os.getcwd()</code> gets current working directory</li>
+<li><code>os.chdir('path')</code> change directory</li>
+<li><code>os.listdir()</code> list all files and folders in current directory</li>
+</ul>
+<h2 id="sys">sys</h2>
+<ul>
+<li>
+<p><code>sys.path</code> list of all the directories where python looks for modules</p>
+</li>
+<li>
+<p>sys.argv is a list in Python, which contains the command-line arguments passed to the script.</p>
+</li>
+<li>
+<p><code>sys.exit()</code> exit from python</p>
+</li>
+</ul>
+<h2 id="basic-command-line-arguments">basic command line arguments</h2>
+<ul>
+<li><code>python3 my_script.py arg1 arg2 arg3</code></li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> sys
+
+print(<span class="hljs-string">'Number of arguments:'</span>, len(sys.argv), <span class="hljs-string">'arguments.'</span>)
+</div></code></pre>
+<h2 id="testing-in-python">Testing in Python</h2>
+<ul>
+<li>unit testing : testing individual units or components of a software</li>
+<li>integration testing : testing the combination of two or more units</li>
+<li>functional testing : testing the functionality of the software</li>
+<li>end-to-end testing : testing the complete flow of the software</li>
+</ul>
+<h2 id="assert">assert</h2>
+<ul>
+<li><code>assert 1 == 1</code> # no output</li>
+<li><code>assert 1 == 2</code> # AssertionError</li>
+</ul>
+<h2 id="unittest">unittest</h2>
+<ul>
+<li><code>import unittest</code></li>
+<li><code>unittest.TestCase</code> is a class that allows us to create test cases</li>
+</ul>
+<h2 id="sample-unittest">Sample unittest</h2>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> unittest
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestStringMethods</span><span class="hljs-params">(unittest.TestCase)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_upper</span><span class="hljs-params">(self)</span>:</span>
+        self.assertEqual(<span class="hljs-string">'foo'</span>.upper(), <span class="hljs-string">'FOO'</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">test_isupper</span><span class="hljs-params">(self)</span>:</span>
+        self.assertTrue(<span class="hljs-string">'FOO'</span>.isupper())
+        self.assertFalse(<span class="hljs-string">'Foo'</span>.isupper())
+</div></code></pre>
+<h2 id="asserts">asserts</h2>
+<ul>
+<li>assertEqual(a, b) checks a and b are equal</li>
+<li>assertNotEqual(a, b) checks a and b are not equal</li>
+<li>assertTrue(x) checks x is True</li>
+<li>assertFalse(x) checks x is False</li>
+<li>assertIs(a, b) checks a is b</li>
+<li>assertIsNot(a, b) checks a is not b</li>
+<li>assertIsNone(x) checks x is None</li>
+<li>assertIsNotNone(x) checks x is not None</li>
+</ul>
+<h2 id="web-frameworks">Web Frameworks</h2>
+<ul>
+<li>Django: high-level web framework</li>
+<li>Flask: micro web framework</li>
+<li>Pyramid: open source web framework</li>
+<li>Bottle: simple web framework</li>
+</ul>
+<h2 id="flask">Flask</h2>
+<ul>
+<li><code>pip install flask</code></li>
+<li>making a simple hello world with welcome animated message</li>
+</ul>
+<pre class="hljs"><code><div>from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+</div></code></pre>
+<ul>
+<li><code>flask run</code> to run the server, it will look for <code>app.py</code> and run the server on port : 5000</li>
+<li>if the file name is different then <code>FLASK_APP=script.py flask run</code></li>
+</ul>
+<h2 id="routess-with-parameters">Routess with parameters</h2>
+<pre class="hljs"><code><div>@app.route('/user/&lt;username&gt;')
+def show_user_profile(username):
+    # show the user profile for that user
+    return 'User %s' % username
+</div></code></pre>
+<h2 id="templates">Templates</h2>
+<ul>
+<li>we can pass arguments to the templates</li>
+<li><code>render_template('index.html', name=name)</code></li>
+<li>the template file should be in <code>templates</code> folder</li>
+<li>inorder to render the passed argument in the template file we use <code>{{ name }}</code></li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-meta">@app.route('/hello/&lt;user&gt;')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hello_name</span><span class="hljs-params">(user)</span>:</span>
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">'hello.html'</span>, name=user)
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> welcome {{ name }} <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</div></code></pre>
+<h2 id="templating-syntax">Templating syntax</h2>
+<ul>
+<li><code>{{ variable }}</code> : to print the variable</li>
+<li><code>{% for i in list %} {{ i }} {% endfor %}</code> : for loop</li>
+<li><code>{% if condition %} {{ variable }} {% endif %}</code> : if condition</li>
+<li><code>{% block content %} {% endblock %}</code> : block of content</li>
+<li><code>{% extends &quot;layout.html&quot; %}</code> : extending the layout file</li>
+<li><code>{% include &quot;header.html&quot; %}</code> : including the header file</li>
+</ul>
+<h2 id="template-syntax---2">Template syntax - 2</h2>
+<ul>
+<li><code>{% set name = &quot;qasim&quot; %}</code> : setting the variable</li>
+<li><code>{% macro render_title(title) %} &lt;title&gt;{{ title }}&lt;/title&gt; {% endmacro %}</code> : creating a macro</li>
+<li><code>{{ render_title(&quot;Home&quot;) }}</code> : using the macro</li>
+<li>the diffrence between <code>{{ }}</code> and <code>{% %}</code> is that <code>{{ }}</code> is used to print the variable and <code>{% %}</code> is used to write the logic</li>
+</ul>
+<h2 id="the-requests-module">the <code>requests</code> module</h2>
+<ul>
+<li>requests module is used to make the http requests</li>
+<li><code>pip install requests</code></li>
+</ul>
+<pre class="hljs"><code><div><span class="hljs-keyword">import</span> requests
+
+<span class="hljs-meta">@app.route('/repos/&lt;username&gt;')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">repos</span><span class="hljs-params">(username)</span>:</span>
+    r = requests.get(<span class="hljs-string">f'https://api.github.com/users/<span class="hljs-subst">{username}</span>/repos'</span>)
+    <span class="hljs-keyword">return</span> r.json()
+</div></code></pre>
+<h2 id="the-requests-module---2">the <code>requests</code> module - 2</h2>
+<pre class="hljs"><code><div><span class="hljs-meta">@app.route('/repos/&lt;username&gt;')</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">repos</span><span class="hljs-params">(username)</span>:</span>
+    r = requests.get(<span class="hljs-string">f'https://api.github.com/users/<span class="hljs-subst">{username}</span>/repos'</span>)
+    <span class="hljs-keyword">return</span> render_template(<span class="hljs-string">'repos.html'</span>, repos=r.json())
+</div></code></pre>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+    {% for repo in repos %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>{{ repo.name }}<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    {% endfor %}
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+</div></code></pre>
+<h2 id="calling-other-routes-from-the-template">calling other routes from the template</h2>
+<pre class="hljs"><code><div><span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">"/repos"</span> <span class="hljs-attr">method</span>=<span class="hljs-string">"get"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"username"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+</div></code></pre>
+
+</body>
+</html>

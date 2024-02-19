@@ -6,6 +6,7 @@ var slidesArray = [
   'HTML5-Essentials',
   'CSS-Essentials',
   'WireFrames',
+  'Python-Essentials',
   'RegEx-Essentials',
   'JS-Essentials',
   'JS-Essentials2',

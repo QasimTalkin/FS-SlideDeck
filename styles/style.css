@@ -29,9 +29,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  padding: 30px;
+  padding: 10px;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .button {
