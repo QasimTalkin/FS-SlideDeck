@@ -480,3 +480,7 @@ def repos(username):
     <input type="submit" value="Submit">
 </form>
 ```
+
+<!-- using GH cli -->
+- create a new repo prtivate and with tempalte xyg
+`gh repo create m
