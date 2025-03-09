@@ -23,7 +23,8 @@ var slidesArray = [
   'MVC-Essentials',
   'strAPI-essential',
   'JS-Solids1',
-  'JS-Solids2'
+  'JS-Solids2',
+  'DesignPatternsIntro'
 ]
 
 // cahange theme
@@ -56,7 +57,7 @@ slidesArray.forEach((slide) => {
 });
 
 
-// nav-bar 
+// nav-bar
 $(document).ready(function () {
   var scroll_start = 0;
   var startchange = $('#startchange');
