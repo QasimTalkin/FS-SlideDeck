@@ -8,16 +8,16 @@ export default function CourseArchive() {
                 <div className="mb-20 pb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-8 border-b border-primary/10">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-sans font-black tracking-tighter text-white mb-4">
-                            Data_Vault
+                            The_Loot_Box
                         </h2>
                         <p className="text-textMuted font-sans text-lg max-w-xl">
-                            Sterile documentation modules. Decrypted and optimized for rapid intellectual injection.
+                            Here's all my best stuff. Dig into these modules, learn something new, and mostly—just enjoy the process!
                         </p>
                     </div>
                     <div className="flex items-center gap-3 px-6 py-2 rounded-full glass-clinic border border-primary/20">
                         <span className="w-2 h-2 bg-primary rounded-full animate-pulse shadow-[0_0_8px_var(--color-primary)]"></span>
                         <span className="font-mono font-bold text-xs text-primary uppercase tracking-[0.2em]">
-                            {courses.length}_Active_Sectors
+                            {courses.length}_Free_Modules
                         </span>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ export default function CourseArchive() {
                                         <div className="absolute inset-0 bg-primary/20 blur-md group-hover/btn:bg-primary/40 transition-all rounded-full opacity-0 group-hover/btn:opacity-100"></div>
                                         <div className="relative w-full flex justify-center items-center gap-2 font-mono text-[11px] font-black py-3.5 bg-primary/10 text-primary border border-primary/30 rounded-full hover:bg-primary hover:text-background hover:border-primary transition-all uppercase tracking-[0.2em]">
                                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                                            Execute_Module
+                                            Let's_Go!
                                         </div>
                                     </a>
                                     <a
@@ -77,7 +77,7 @@ export default function CourseArchive() {
                                         className="w-full flex justify-center items-center gap-2 font-mono text-[11px] font-bold py-3.5 text-textMuted/60 hover:text-primary transition-all uppercase tracking-[0.2em] bg-transparent border border-white/5 hover:border-primary/20 rounded-full"
                                     >
                                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                                        Save_Dossier
+                                        Get_Guide
                                     </a>
                                 </div>
                             </div>
@@ -86,7 +86,7 @@ export default function CourseArchive() {
 
                     {courses.length === 0 && (
                         <div className="col-span-full py-24 text-center rounded-[3rem] border border-dashed border-primary/20 font-mono text-primary/40 text-sm tracking-widest bg-surface/20">
-                            SYSTEM_ERROR: NO_DATA_DETECTED_IN_VAULT
+                            SYSTEM_STATUS: NO_MODULES_FOUND
                         </div>
                     )}
                 </div>
