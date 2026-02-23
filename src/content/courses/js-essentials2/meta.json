@@ -1,0 +1,9 @@
+{
+  "id": "js-essentials2",
+  "title": "JS Essentials2",
+  "description": "Lecture slides covering core concepts of JS Essentials2.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/JS-Essentials2.pdf",
+  "htmlPath": "/embeded/JS-Essentials2.html"
+}

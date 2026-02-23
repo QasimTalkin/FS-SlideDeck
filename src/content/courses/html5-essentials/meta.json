@@ -1,0 +1,9 @@
+{
+  "id": "html5-essentials",
+  "title": "HTML5 Essentials",
+  "description": "Lecture slides covering core concepts of HTML5 Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/HTML5-Essentials.pdf",
+  "htmlPath": "/embeded/HTML5-Essentials.html"
+}

@@ -1,0 +1,9 @@
+{
+  "id": "git-essentials",
+  "title": "GIT Essentials",
+  "description": "Lecture slides covering core concepts of GIT Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/GIT-Essentials.pdf",
+  "htmlPath": "/embeded/GIT-Essentials.html"
+}

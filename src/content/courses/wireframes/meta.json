@@ -1,0 +1,9 @@
+{
+  "id": "wireframes",
+  "title": "WireFrames",
+  "description": "Lecture slides covering core concepts of WireFrames.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/WireFrames.pdf",
+  "htmlPath": "/embeded/WireFrames.html"
+}

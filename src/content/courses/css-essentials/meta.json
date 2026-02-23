@@ -1,0 +1,9 @@
+{
+  "id": "css-essentials",
+  "title": "CSS Essentials",
+  "description": "Lecture slides covering core concepts of CSS Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/CSS-Essentials.pdf",
+  "htmlPath": "/embeded/CSS-Essentials.html"
+}

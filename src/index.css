@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@theme {
+    --color-background: #0B0E14;
+    --color-surface: #151921;
+    --color-surface-hover: #1E232D;
+    --color-primary: #00F5FF;
+    /* Surgical Cyan */
+    --color-primary-glow: rgba(0, 245, 255, 0.4);
+    --color-accent: #FF00E5;
+    /* Vapor Pink */
+    --color-textMain: #E0E6ED;
+    --color-textMuted: #94A3B8;
+    --font-sans: 'Outfit', 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+/* Surgical Light Theme */
+.light {
+    --color-background: #F8FAFC;
+    --color-surface: #FFFFFF;
+    --color-surface-hover: #F1F5F9;
+    --color-primary: #0EA5E9;
+    --color-primary-glow: rgba(14, 165, 233, 0.2);
+    --color-accent: #D946EF;
+    --color-textMain: #0F172A;
+    --color-textMuted: #64748B;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-sans);
+        background-color: var(--color-background);
+        color: var(--color-textMain);
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background:
+            linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: var(--font-sans);
+        letter-spacing: -0.03em;
+        color: var(--color-textMain);
+    }
+}
+
+@utility glass-clinic {
+    background-color: color-mix(in srgb, var(--color-surface), transparent 30%);
+    backdrop-filter: blur(12px);
+    border: 1px solid color-mix(in srgb, var(--color-primary), transparent 90%);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+@utility neon-border {
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 0 15px var(--color-primary-glow);
+}
+
+@utility clinic-card {
+    background: var(--color-surface);
+    border: 1px solid rgba(0, 245, 255, 0.08);
+    border-radius: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        border-color: var(--color-primary);
+        box-shadow: 0 0 30px rgba(0, 245, 255, 0.1);
+        transform: translateY(-4px);
+    }
+}
+
+@utility scanline {
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 245, 255, 0.03) 50%,
+            rgba(0, 0, 0, 0) 100%);
+    opacity: 0.1;
+    position: absolute;
+    bottom: 100%;
+    animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+    0% {
+        bottom: 100%;
+    }
+
+    100% {
+        bottom: -100px;
+    }
+}

@@ -1,0 +1,200 @@
+[
+  {
+    "id": "bootstrap-essentials",
+    "title": "BootStrap Essentials",
+    "description": "Learn how to rapidly build responsive websites and mobile-first projects using Bootstrap.",
+    "category": "FRONTEND",
+    "pdfPath": "/pdf/BootStrap-Essentials.pdf",
+    "htmlPath": "/embeded/BootStrap-Essentials.html",
+    "imagePath": "/img/BootStrap-Essentials.png"
+  },
+  {
+    "id": "css-essentials",
+    "title": "CSS Essentials",
+    "description": "Master the visual language of the web. Cover flexbox, grid, and modern styling techniques.",
+    "category": "FRONTEND",
+    "pdfPath": "/pdf/CSS-Essentials.pdf",
+    "htmlPath": "/embeded/CSS-Essentials.html",
+    "imagePath": "/img/CSS-Essentials.png"
+  },
+  {
+    "id": "designpatternsintro",
+    "title": "DesignPatternsIntro",
+    "description": "Explore battle-tested software design patterns to write cleaner, more maintainable code.",
+    "category": "ARCHITECTURE",
+    "pdfPath": "/pdf/DesignPatternsIntro.pdf",
+    "htmlPath": "/embeded/DesignPatternsIntro.html",
+    "imagePath": "/img/DesignPatternsIntro.png"
+  },
+  {
+    "id": "docker-essentials",
+    "title": "Docker Essentials",
+    "description": "Containerize your applications. Learn everything from Dockerfiles to orchestrating containers.",
+    "category": "TOOLS",
+    "pdfPath": "/pdf/Docker-Essentials.pdf",
+    "htmlPath": "/embeded/Docker-Essentials.html",
+    "imagePath": "/img/Docker-Essentials.png"
+  },
+  {
+    "id": "git-essentials",
+    "title": "GIT Essentials",
+    "description": "Version control essentials. Stop losing code and start collaborating like a professional.",
+    "category": "TOOLS",
+    "pdfPath": "/pdf/GIT-Essentials.pdf",
+    "htmlPath": "/embeded/GIT-Essentials.html",
+    "imagePath": "/img/GIT-Essentials.png"
+  },
+  {
+    "id": "html5-essentials",
+    "title": "HTML5 Essentials",
+    "description": "The foundation of the internet. Learn semantics, accessibility, and structural markup.",
+    "category": "FRONTEND",
+    "pdfPath": "/pdf/HTML5-Essentials.pdf",
+    "htmlPath": "/embeded/HTML5-Essentials.html",
+    "imagePath": "/img/HTML5-Essentials.png"
+  },
+  {
+    "id": "js-essentials",
+    "title": "JS Essentials",
+    "description": "From variables to async/await. Your complete guide to modern JavaScript fundamentals.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/JS-Essentials.pdf",
+    "htmlPath": "/embeded/JS-Essentials.html",
+    "imagePath": "/img/JS-Essentials.png"
+  },
+  {
+    "id": "js-essentials2",
+    "title": "JS Essentials2",
+    "description": "From variables to async/await. Your complete guide to modern JavaScript fundamentals.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/JS-Essentials2.pdf",
+    "htmlPath": "/embeded/JS-Essentials2.html",
+    "imagePath": "/img/JS-Essentials2.png"
+  },
+  {
+    "id": "js-solids1",
+    "title": "JS Solids1",
+    "description": "Writing robust object-oriented JavaScript using the S.O.L.I.D. design principles.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/JS-Solids1.pdf",
+    "htmlPath": "/embeded/JS-Solids1.html",
+    "imagePath": "/img/JS-Solids1.png"
+  },
+  {
+    "id": "js-solids2",
+    "title": "JS Solids2",
+    "description": "Writing robust object-oriented JavaScript using the S.O.L.I.D. design principles.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/JS-Solids2.pdf",
+    "htmlPath": "/embeded/JS-Solids2.html",
+    "imagePath": "/img/JS-Solids2.png"
+  },
+  {
+    "id": "js-essentials3",
+    "title": "Js Essentials3",
+    "description": "From variables to async/await. Your complete guide to modern JavaScript fundamentals.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/Js-Essentials3.pdf",
+    "htmlPath": "/embeded/Js-Essentials3.html",
+    "imagePath": "/img/Js-Essentials3.png"
+  },
+  {
+    "id": "mvc-essentials",
+    "title": "MVC Essentials",
+    "description": "Understanding the Model-View-Controller architecture pattern for scalable web applications.",
+    "category": "ARCHITECTURE",
+    "pdfPath": "/pdf/MVC-Essentials.pdf",
+    "htmlPath": "/embeded/MVC-Essentials.html",
+    "imagePath": "/img/MVC-Essentials.png"
+  },
+  {
+    "id": "node-essentials",
+    "title": "Node Essentials",
+    "description": "Take JavaScript to the server. Build fast, scalable network applications and REST APIs.",
+    "category": "BACKEND",
+    "pdfPath": "/pdf/Node-Essentials.pdf",
+    "htmlPath": "/embeded/Node-Essentials.html",
+    "imagePath": "/img/Node-Essentials.png"
+  },
+  {
+    "id": "orm-essentials",
+    "title": "ORM Essentials",
+    "description": "Object-Relational Mapping. Learn how to securely bridge the gap between your code and database.",
+    "category": "BACKEND",
+    "pdfPath": "/pdf/ORM-Essentials.pdf",
+    "htmlPath": "/embeded/ORM-Essentials.html",
+    "imagePath": "/img/ORM-Essentials.png"
+  },
+  {
+    "id": "php-essentials1",
+    "title": "PHP Essentials1",
+    "description": "Dive into server-side scripting and dynamic page generation with classic PHP essentials.",
+    "category": "BACKEND",
+    "pdfPath": "/pdf/PHP-Essentials1.pdf",
+    "htmlPath": "/embeded/PHP-Essentials1.html",
+    "imagePath": "/img/PHP-Essentials1.png"
+  },
+  {
+    "id": "python-essentials",
+    "title": "Python Essentials",
+    "description": "The ultimate beginner-friendly language. Learn Python for web, automation, and data.",
+    "category": "LANGUAGE",
+    "pdfPath": "/pdf/Python-Essentials.pdf",
+    "htmlPath": "/embeded/Python-Essentials.html",
+    "imagePath": "/img/Python-Essentials.png"
+  },
+  {
+    "id": "regex-essentials",
+    "title": "RegEx Essentials",
+    "description": "Regular Expressions. Demystify the dark art of ultimate string matching and parsing.",
+    "category": "TOOLS",
+    "pdfPath": "/pdf/RegEx-Essentials.pdf",
+    "htmlPath": "/embeded/RegEx-Essentials.html",
+    "imagePath": "/img/RegEx-Essentials.png"
+  },
+  {
+    "id": "sql-essentials",
+    "title": "SQL Essentials",
+    "description": "Relational databases demystified. Write powerful queries to manage and analyze data.",
+    "category": "FULL STACK",
+    "pdfPath": "/pdf/SQL-Essentials.pdf",
+    "htmlPath": "/embeded/SQL-Essentials.html",
+    "imagePath": "/img/SQL-Essentials.png"
+  },
+  {
+    "id": "tdd",
+    "title": "TDD",
+    "description": "Test-Driven Development. Learn how to write tests first to guarantee reliable, bug-free applications.",
+    "category": "METHODOLOGY",
+    "pdfPath": "/pdf/TDD.pdf",
+    "htmlPath": "/embeded/TDD.html",
+    "imagePath": "/img/TDD.png"
+  },
+  {
+    "id": "wireframes",
+    "title": "WireFrames",
+    "description": "UI/UX basics. Learn how to map out user journeys and sketch applications before writing code.",
+    "category": "DESIGN",
+    "pdfPath": "/pdf/WireFrames.pdf",
+    "htmlPath": "/embeded/WireFrames.html",
+    "imagePath": "/img/WireFrames.png"
+  },
+  {
+    "id": "jquery-essentials",
+    "title": "JQuery Essentials",
+    "description": "Understand the legacy library that shaped the modern web and basic DOM manipulation.",
+    "category": "FRONTEND",
+    "pdfPath": "/pdf/jQuery-Essentials.pdf",
+    "htmlPath": "/embeded/jQuery-Essentials.html",
+    "imagePath": "/img/jQuery-Essentials.png"
+  },
+  {
+    "id": "strapi-essential",
+    "title": "StrAPI Essential",
+    "description": "Headless CMS architecture. Build APIs rapidly and manage content without building a custom dashboard.",
+    "category": "BACKEND",
+    "pdfPath": "/pdf/strAPI-essential.pdf",
+    "htmlPath": "/embeded/strAPI-essential.html",
+    "imagePath": "/img/strAPI-essential.png"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "orm-essentials",
+  "title": "ORM Essentials",
+  "description": "Lecture slides covering core concepts of ORM Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/ORM-Essentials.pdf",
+  "htmlPath": "/embeded/ORM-Essentials.html"
+}

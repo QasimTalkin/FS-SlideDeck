@@ -1,0 +1,9 @@
+{
+  "id": "bootstrap-essentials",
+  "title": "BootStrap Essentials",
+  "description": "Lecture slides covering core concepts of BootStrap Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/BootStrap-Essentials.pdf",
+  "htmlPath": "/embeded/BootStrap-Essentials.html"
+}

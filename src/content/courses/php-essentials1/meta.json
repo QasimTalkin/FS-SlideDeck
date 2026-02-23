@@ -1,0 +1,9 @@
+{
+  "id": "php-essentials1",
+  "title": "PHP Essentials1",
+  "description": "Lecture slides covering core concepts of PHP Essentials1.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/PHP-Essentials1.pdf",
+  "htmlPath": "/embeded/PHP-Essentials1.html"
+}

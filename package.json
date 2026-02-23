@@ -1,0 +1,37 @@
+{
+  "name": "fs-slidedeck",
+  "version": "1.0.0",
+  "description": "Full Stack Development lecture Slides",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QasimTalkin/FS-SlideDeck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QasimTalkin/FS-SlideDeck/issues"
+  },
+  "homepage": "https://github.com/QasimTalkin/FS-SlideDeck#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.0",
+    "autoprefixer": "^10.4.24",
+    "gsap": "^3.14.2",
+    "lucide-react": "^0.575.0",
+    "postcss": "^8.5.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.13.0",
+    "tailwindcss": "^4.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.4",
+    "vite": "^7.3.1"
+  }
+}

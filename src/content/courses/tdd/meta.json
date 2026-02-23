@@ -1,0 +1,9 @@
+{
+  "id": "tdd",
+  "title": "TDD",
+  "description": "Lecture slides covering core concepts of TDD.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/TDD.pdf",
+  "htmlPath": "/embeded/TDD.html"
+}

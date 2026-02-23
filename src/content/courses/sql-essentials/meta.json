@@ -1,0 +1,9 @@
+{
+  "id": "sql-essentials",
+  "title": "SQL Essentials",
+  "description": "Lecture slides covering core concepts of SQL Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/SQL-Essentials.pdf",
+  "htmlPath": "/embeded/SQL-Essentials.html"
+}

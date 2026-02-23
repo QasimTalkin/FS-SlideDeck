@@ -1,0 +1,9 @@
+{
+  "id": "jquery-essentials",
+  "title": "jQuery Essentials",
+  "description": "Lecture slides covering core concepts of jQuery Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/jQuery-Essentials.pdf",
+  "htmlPath": "/embeded/jQuery-Essentials.html"
+}

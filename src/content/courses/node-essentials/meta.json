@@ -1,0 +1,9 @@
+{
+  "id": "node-essentials",
+  "title": "Node Essentials",
+  "description": "Lecture slides covering core concepts of Node Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/Node-Essentials.pdf",
+  "htmlPath": "/embeded/Node-Essentials.html"
+}

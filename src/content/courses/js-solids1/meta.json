@@ -1,0 +1,9 @@
+{
+  "id": "js-solids1",
+  "title": "JS Solids1",
+  "description": "Lecture slides covering core concepts of JS Solids1.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/JS-Solids1.pdf",
+  "htmlPath": "/embeded/JS-Solids1.html"
+}

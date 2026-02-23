@@ -1,0 +1,9 @@
+{
+  "id": "strapi-essential",
+  "title": "strAPI essential",
+  "description": "Lecture slides covering core concepts of strAPI essential.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/strAPI-essential.pdf",
+  "htmlPath": "/embeded/strAPI-essential.html"
+}

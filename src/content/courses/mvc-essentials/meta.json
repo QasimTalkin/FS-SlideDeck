@@ -1,0 +1,9 @@
+{
+  "id": "mvc-essentials",
+  "title": "MVC Essentials",
+  "description": "Lecture slides covering core concepts of MVC Essentials.",
+  "category": "Full Stack Course",
+  "status": "active",
+  "pdfPath": "/pdf/MVC-Essentials.pdf",
+  "htmlPath": "/embeded/MVC-Essentials.html"
+}
