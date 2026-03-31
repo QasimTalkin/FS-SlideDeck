@@ -1,30 +1,31 @@
 @import "tailwindcss";
 
 @theme {
-    --color-background: #0B0E14;
-    --color-surface: #151921;
-    --color-surface-hover: #1E232D;
-    --color-primary: #00F5FF;
-    /* Surgical Cyan */
-    --color-primary-glow: rgba(0, 245, 255, 0.4);
-    --color-accent: #FF00E5;
-    /* Vapor Pink */
-    --color-textMain: #E0E6ED;
-    --color-textMuted: #94A3B8;
+    /* Student-friendly dark theme — warm navy, not pitch black */
+    --color-background: #13111C;
+    --color-surface: #1E1B2E;
+    --color-surface-hover: #2A2640;
+    --color-primary: #A78BFA;
+    /* Soft violet — approachable and energetic */
+    --color-primary-glow: rgba(167, 139, 250, 0.35);
+    --color-accent: #FCD34D;
+    /* Warm amber — friendly highlight */
+    --color-textMain: #EDE9FE;
+    --color-textMuted: #A8A3C1;
     --font-sans: 'Outfit', 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
 }
 
-/* Surgical Light Theme */
+/* Light Theme — warm white, easy on the eyes */
 .light {
-    --color-background: #F8FAFC;
+    --color-background: #FAF8FF;
     --color-surface: #FFFFFF;
-    --color-surface-hover: #F1F5F9;
-    --color-primary: #0EA5E9;
-    --color-primary-glow: rgba(14, 165, 233, 0.2);
-    --color-accent: #D946EF;
-    --color-textMain: #0F172A;
-    --color-textMuted: #64748B;
+    --color-surface-hover: #F3F0FF;
+    --color-primary: #7C3AED;
+    --color-primary-glow: rgba(124, 58, 237, 0.2);
+    --color-accent: #D97706;
+    --color-textMain: #1E1B4B;
+    --color-textMuted: #6B7280;
 }
 
 @layer base {
@@ -42,8 +43,8 @@
         position: fixed;
         inset: 0;
         background:
-            linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+            linear-gradient(rgba(167, 139, 250, 0.04) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(167, 139, 250, 0.04) 1px, transparent 1px);
         background-size: 50px 50px;
         z-index: -1;
         pointer-events: none;
@@ -75,7 +76,7 @@
 
 @utility clinic-card {
     background: var(--color-surface);
-    border: 1px solid rgba(0, 245, 255, 0.08);
+    border: 1px solid rgba(167, 139, 250, 0.1);
     border-radius: 1.5rem;
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     position: relative;
@@ -83,7 +84,7 @@
 
     &:hover {
         border-color: var(--color-primary);
-        box-shadow: 0 0 30px rgba(0, 245, 255, 0.1);
+        box-shadow: 0 0 30px rgba(167, 139, 250, 0.15);
         transform: translateY(-4px);
     }
 }
@@ -94,7 +95,7 @@
     z-index: 10;
     background: linear-gradient(0deg,
             rgba(0, 0, 0, 0) 0%,
-            rgba(0, 245, 255, 0.03) 50%,
+            rgba(167, 139, 250, 0.04) 50%,
             rgba(0, 0, 0, 0) 100%);
     opacity: 0.1;
     position: absolute;

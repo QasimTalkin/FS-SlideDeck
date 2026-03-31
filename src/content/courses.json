@@ -135,6 +135,15 @@
     "imagePath": "/img/PHP-Essentials1.png"
   },
   {
+    "id": "php-zero-to-hero",
+    "title": "PHP Zero to Hero",
+    "description": "Complete PHP from scratch — variables, functions, OOP, and MySQL database integration. Go from beginner to building real dynamic web apps.",
+    "category": "BACKEND",
+    "pdfPath": "/pdf/PHP-ZeroToHero.pdf",
+    "htmlPath": "/embeded/PHP-ZeroToHero.html",
+    "imagePath": "/img/PHP-ZeroToHero.png"
+  },
+  {
     "id": "python-essentials",
     "title": "Python Essentials",
     "description": "The ultimate beginner-friendly language. Learn Python for web, automation, and data.",
