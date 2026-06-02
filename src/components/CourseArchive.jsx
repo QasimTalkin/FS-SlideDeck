@@ -1,6 +1,9 @@
 import React from 'react';
 import courses from '../content/courses.json';
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const withBase = (path) => `${base}${path}`;
+
 export default function CourseArchive() {
     return (
         <section id="archive" className="py-32 px-6 md:px-12 lg:px-24">
@@ -34,7 +37,7 @@ export default function CourseArchive() {
                                 <div className="scanline"></div>
 
                                 <img
-                                    src={course.imagePath}
+                                    src={withBase(course.imagePath)}
                                     alt={`${course.title} Cover`}
                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 ease-out opacity-80 group-hover:opacity-100 invert group-hover:invert-0 transition-all font-sans"
                                     loading="lazy"
@@ -60,7 +63,7 @@ export default function CourseArchive() {
 
                                 <div className="flex flex-col gap-4 mt-auto">
                                     <a
-                                        href={course.htmlPath}
+                                        href={withBase(course.htmlPath)}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="relative group/btn"
@@ -72,7 +75,7 @@ export default function CourseArchive() {
                                         </div>
                                     </a>
                                     <a
-                                        href={course.pdfPath}
+                                        href={withBase(course.pdfPath)}
                                         download
                                         className="w-full flex justify-center items-center gap-2 font-mono text-[11px] font-bold py-3.5 text-textMuted/60 hover:text-primary transition-all uppercase tracking-[0.2em] bg-transparent border border-white/5 hover:border-primary/20 rounded-full"
                                     >
